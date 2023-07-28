@@ -4,30 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ee4f8fbe61.js" crossorigin="anonymous"></script>
   <title>Scribble</title>
 </head>
 <body>
-  <a  id="logo" href="index.html">Scribble</a>
-  <div id="loader"></div>
+  
   <div class="editor">
-    <div class="input">
-      <div class="icon-container">
+    <div class="tab-container">
+      <div class="tab active" data-code-type="html"><i class="fa-brands fa-html5"></i></div>
+      <div class="tab" data-code-type="css"><i class="fa-brands fa-css3"></i></div>
+      <div class="tab" data-code-type="js"><i class="fa-brands fa-js"></i></div>
+    </div>
+
+    <div id="input">
+      <div class="pane" id="html-pane">
         <textarea id="html-code" class="code-area" placeholder="Enter HTML code..."></textarea>
-        <i class="fa fa-html5" aria-hidden="true"></i>
       </div>
-      <div class="icon-container">
+
+      <div class="pane" id="css-pane">
         <textarea id="css-code" class="code-area" placeholder="Enter CSS code..."></textarea>
-        <i class="fa fa-css3" aria-hidden="true"></i>
-      </div>
-      <div class="icon-container">
+      </div> 
+
+      <div class="pane" id="js-pane">
         <textarea id="js-code" class="code-area" placeholder="Enter JavaScript code..."></textarea>
-        <i class="fa fa-code" aria-hidden="true"></i>
       </div>
     </div>
+
     <iframe id="output"></iframe>
   </div>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
