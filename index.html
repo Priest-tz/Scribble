@@ -3,17 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Scribble</title>
 </head>
 <body>
+  <a  id="logo" href="index.html">Scribble</a>
+  <div id="loader"></div>
   <div class="editor">
-    <textarea id="html-code"></textarea>
-    <textarea id="css-code"></textarea>
-    <textarea id="js-code"></textarea>
+    <div class="input">
+      <div class="icon-container">
+        <textarea id="html-code" class="code-area" placeholder="Enter HTML code..."></textarea>
+        <i class="fa fa-html5" aria-hidden="true"></i>
+      </div>
+      <div class="icon-container">
+        <textarea id="css-code" class="code-area" placeholder="Enter CSS code..."></textarea>
+        <i class="fa fa-css3" aria-hidden="true"></i>
+      </div>
+      <div class="icon-container">
+        <textarea id="js-code" class="code-area" placeholder="Enter JavaScript code..."></textarea>
+        <i class="fa fa-code" aria-hidden="true"></i>
+      </div>
+    </div>
     <iframe id="output"></iframe>
   </div>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
