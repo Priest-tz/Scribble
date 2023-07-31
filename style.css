@@ -108,6 +108,11 @@ font-family: "Roboto Mono", monospace;
     height: 50%; 
   }
 
+  .pane {
+    height: 70vh;
+    resize: none;
+  }
+
   .tab-container{
     flex-direction: row;
   }
