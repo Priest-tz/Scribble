@@ -92,3 +92,24 @@ font-family: "Roboto Mono", monospace;
 .tab.active {
   background-color: #fff;
 }
+
+@media (max-width: 477px) {
+  .editor {
+    display: block;
+  }
+
+  #input,
+  #output {
+    flex-direction: column;
+    height: 50%;
+  }
+
+  #input textarea {
+    height: 50%; 
+  }
+
+  .tab-container{
+    flex-direction: row;
+  }
+}
+
